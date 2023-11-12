@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <script type="module" defer src="ConnectWallet.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
    <!-- <script defer src="token.js"></script>-->
@@ -23,105 +24,5 @@
     <button id="mintButton">MINT</button>
 
 
-
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
-body {
-    background-color: black;
-    color: rgb(2, 2, 249);
-    font-family: 'poppins', sans-serif;
-    font-weight: 900;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    text-align: center;
-}
-
-h1 {
-    margin-bottom: 2em;
-}
-
-#mintButton {
-    background-color: #32CD32; 
-    border: none;
-    color: black;
-    padding: 5px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    font-weight: 900;
-    transition-duration: 0.1s;
-    cursor: pointer;
-    border: 2px solid #32CD32;
-}
-
-#mintButton:hover {
-    background-color: black; 
-    color: #32CD32; 
-}
-
-header {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%; 
-}
-
-#connectButton{
-    background-color: #ed07ed; 
-    margin-right: 5px;
-    margin-left: 5px;
-    color: black;
-    padding: 2px 4px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 8px;
-    font-weight: 900;
-    transition-duration: 0.1s;
-    cursor: pointer;
-    border: 2px solid #ed07ed;
-}
-
-#connectButton:hover{
-    background-color: black; 
-    color: #ed07ed; 
-}
-
-#balanceDisplay {
-    background-color: black; 
-    border: none;
-    color: #ed07ed;
-    padding: 2px 4px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 8px;
-    font-weight: 900;
-    transition-duration: 0.1s;
-    cursor: pointer;
-    border: 2px solid #ed07ed;
-}
-#walletIdDisplay {
-    background-color: black; 
-    border: none;
-    color: white;
-    padding: 2px 4px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 8px;
-    font-weight: 900;
-    transition-duration: 0.1s;
-    border: 2px solid #ed07ed;
-    }
-    </style>
 </body>
 </html>

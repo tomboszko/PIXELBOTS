@@ -1,0 +1,87 @@
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+
+    body {
+        background-color: black;
+        color:#ed07ed;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 900;
+        height: 100vh;
+        margin: 0;
+        text-align: center;
+    }
+    
+    h1 {
+        margin-bottom: 2rem;
+    }
+    
+    #mintButton,
+    #connectButton,
+    #balanceDisplay,
+    #walletIdDisplay {
+        background-color: #ed07ed;
+        color: #fff;
+        padding: 8px 16px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 700;
+        transition-duration: 0.3s;
+        cursor: pointer;
+        border: 2px solid #ed07ed;
+        margin: 5px;
+    }
+
+    #connectButton:hover {
+        background-color: #333;
+        border: 2px solid #ed07ed;
+    }
+    
+    #mintButton:hover,
+    #balanceDisplay:hover,
+    #walletIdDisplay:hover {
+        background-color:#ed07ed;
+        border: 2px solid #ed07ed;
+    }
+    
+    header {
+        
+       
+        width: 100%;
+        margin-top: 1rem;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    #connectButton,
+    #balanceDisplay,
+    #walletIdDisplay {
+        font-size: 12px;
+    }
+    
+    #balanceDisplay,
+    #walletIdDisplay {
+        background-color: #333;
+        color: #fff;
+    }
+    
+    #walletIdDisplay {
+        border: 2px solid #ed07ed;
+    }
+    
+    /* Media queries for responsive design */
+    @media screen and (max-width: 600px) {
+        h1 {
+            font-size: 1.5rem;
+        }
+    
+        #mintButton,
+        #connectButton,
+        #balanceDisplay,
+        #walletIdDisplay {
+            font-size: 12px;
+            padding: 6px 12px;
+        }
+    }
+  
