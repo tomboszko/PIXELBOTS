@@ -1,3 +1,6 @@
+
+
+
 console.log('token.js loaded');
 
 async function createToken(web3) {
