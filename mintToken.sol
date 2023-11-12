@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
+// Versioning problem code doesn;t work
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 
 contract MyToken is ERC721 {

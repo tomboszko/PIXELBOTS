@@ -5,9 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="token.js"></script>
     <title>Token</title>
+    <style>
+        body {
+            background-color: black;
+            color: #32CD32;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #mintButton {
+            background-color: #32CD32; /* Lime green */
+            border: none;
+            color: black;
+            padding: 5px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            transition-duration: 0.1s;
+            cursor: pointer;
+            
+        }
+
+        #mintButton:hover {
+            background-color: black; 
+            color: #32CD32; 
+            border: 2px solid #32CD32;
+        }
+    </style>
 </head>
 <body>
-
-    
+<button id="mintButton">Mint</button>
 </body>
 </html>
