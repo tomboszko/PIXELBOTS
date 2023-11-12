@@ -20,10 +20,13 @@ async function updateInfo() {
         }
 
         const account = accounts[0];
+        console.log("Connected account: ", account);
+        
 
         // Get the account's balance in Wei
         const balanceWei = await web3.eth.getBalance(account);
-
+        console.log("Balance: ", await web3.eth.getBalance(account));
+        
         // Convert Wei to Ether and display with only two digits after the decimal point
         const balanceEth = web3.utils.fromWei(balanceWei, 'ether');
         document.getElementById('balanceDisplay').innerText = `Balance: ${parseFloat(balanceEth).toFixed(2)} ETH`;
