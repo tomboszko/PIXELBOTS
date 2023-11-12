@@ -1,1 +1,8 @@
 # Token
+
+## Personal project 
+
+Creation (mint) of a NFT series to learn about smart contrats and blockchain interaction.
+
+
+
