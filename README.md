@@ -1,4 +1,4 @@
-# Token
+# NFT minting 
 
 ## Personal project 
 
