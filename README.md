@@ -15,7 +15,7 @@ Deployed project [NFT minting](https://tomboszko.github.io/Token/)
 This is the first step of the project, it allow user to connect his wallet to the site and display wallet ID and account balance.
 
 I choose to only work with Metamask wallet because it's really user friendly and simple to install.
-To interact with the site you need to install Metamask 
+To interact with the site you need to install Metamask.
 
 Here's the link to download and to the documentation for Metamask wallet [Metamask.io](https://metamask.io/)
 
@@ -53,7 +53,7 @@ If you want to interact with Sepolia, you need to add it to your wallet, 2 optio
   
   `npm install web3@^4.2.2`
 
-    Web3.js is a collection of libraries that allow you to interact with a local or remote Ethereum node using HTTP, IPC, or WebSocket. It's used to interact with the Ethereum blockchain, send        transactions, interact with smart contracts, and more.
+    Web3.js is a collection of libraries that allow you to interact with a local or remote Ethereum node using HTTP, IPC, or WebSocket. It's used to interact with the Ethereum blockchain, send transactions, interact with smart contracts, and more.
   
 - **OpenZeppelin Contracts**
   
