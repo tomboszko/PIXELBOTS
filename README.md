@@ -21,6 +21,16 @@ Here's the link to download and to the documentation for Metamask wallet [Metama
 
 **WARNING: When asking to write your seedphrase, make it carefully because it's your PRIVATE  key to access wallet.**
 
+The NFT will be minted on Sepolia Testnet, it's a test blockchain who mimic Ethereum Mainnet.
+If you want to interact with Sepolia, you need to add it to your wallet, 2 options:
+
+1 Go to [Alchemy](https://www.alchemy.com/overviews/sepolia-testnet) to see docs and how to add manually Sepolia to your wallet.
+
+2 Got to [Chainlist](https://chainlist.org/?search=Sepolia&testnets=true) connect your wallet to the site, then search(including testnets) for Sepolia  with `id:11155111` then add it to your wallet.
+
+
+
+
 ### Features
 
 - Connect to MetaMask wallet
