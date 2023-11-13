@@ -64,6 +64,13 @@
     #walletIdDisplay {
         border: 2px solid #ed07ed;
     }
+
+    #networkDisplay {
+        color: white;
+        font-size: 20px;
+        background-color: #4CAF50;
+        padding: 10px;
+    }
     
     /* Media queries for responsive design */
     @media screen and (max-width: 600px) {
