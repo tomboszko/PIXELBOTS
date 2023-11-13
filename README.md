@@ -10,7 +10,7 @@ Next step is to create a small collection of pixel art robots and allow user to 
 
 Deployed project [NFT minting](https://tomboszko.github.io/Token/)
 
-## Ethereum Wallet Connection
+## 1 Ethereum Wallet Connection
 
 This is the first step of the project, it allow user to connect his wallet to the site and display wallet ID and account balance.
 
@@ -20,6 +20,10 @@ This is the first step of the project, it allow user to connect his wallet to th
 - Display wallet ID
 - Display wallet balance in Ether
 - Copy to clipboard when wallet ID clicked
+
+## 2 Creation of collection
+
+<span style="color:red">This step is actually in process, stay tuned.</span>
 
 ## Technologies Used
 
