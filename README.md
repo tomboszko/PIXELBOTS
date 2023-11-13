@@ -12,9 +12,9 @@ Deployed project [NFT minting](https://tomboszko.github.io/Token/)
 
 ## Ethereum Wallet Connection
 
-This project is a simple web page that allows users to connect their Ethereum wallet, specifically MetaMask, to the web page. It displays the connected wallet's ID and balance in Ether.
+This is the first step of the project, it allow user to connect his wallet to the site and display wallet ID and account balance.
 
-## Features
+### Features
 
 - Connect to MetaMask wallet
 - Display wallet ID
