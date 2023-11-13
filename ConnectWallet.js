@@ -31,14 +31,29 @@ async function updateInfo() {
         const balanceEth = web3.utils.fromWei(balanceWei, 'ether');
         document.getElementById('balanceDisplay').innerText = `Balance: ${parseFloat(balanceEth).toFixed(2)} ETH`;
 
-        // Display wallet ID
-        document.getElementById('walletIdDisplay').innerText = `Wallet ID: ${account}`;
+        // Display last three digits of wallet ID
+        let lastThreeDigits = account.slice(-3);
+        document.getElementById('walletIdDisplay').innerText = `Wallet ID: ...${lastThreeDigits}`;
+        document.getElementById('walletIdDisplay').title = `Wallet ID: ${account}`;
 
         // Update button text
         document.getElementById('connectButton').innerText = 'Connected';
     } catch (error) {
         console.error("Error updating balance: ", error);
     }
+}
+
+// Function to copy wallet ID to clipboard when clicked
+
+window.copyToClipboard = function() {
+    let walletId = document.getElementById('walletIdDisplay').title;
+    console.log('walletId:', walletId);
+    console.log('navigator.clipboard:', navigator.clipboard);
+    navigator.clipboard.writeText(walletId).then(function() {
+        console.log('Copying to clipboard was successful!');
+    }, function(err) {
+        console.error('Could not copy text: ', err);
+    });
 }
 
 // Call updateInfo when the script runs
