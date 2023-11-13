@@ -9,7 +9,6 @@ async function updateInfo() {
             console.log("Non-Ethereum browser detected. Consider trying MetaMask!");
             return;
         }
-
         // Request the connected accounts
         const accounts = await window.ethereum.request({ method: 'eth_accounts' });
 
@@ -18,11 +17,9 @@ async function updateInfo() {
             document.getElementById('connectButton').innerText = 'Connect Wallet';
             return;
         }
-
         const account = accounts[0];
         console.log("Connected account: ", account);
         
-
         // Get the account's balance in Wei
         const balanceWei = await web3.eth.getBalance(account);
         console.log("Balance: ", await web3.eth.getBalance(account));
@@ -38,6 +35,7 @@ async function updateInfo() {
 
         // Update button text
         document.getElementById('connectButton').innerText = 'Connected';
+        
     } catch (error) {
         console.error("Error updating balance: ", error);
     }
