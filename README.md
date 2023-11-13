@@ -2,7 +2,9 @@
 
 ## Personal project 
 
-Creation (mint) of a NFT series to learn about smart contracts and blockchain interaction.
+Creation (mint) of a NFT series to learn about smart contracts and blockchain interaction using a Javascript framework 
+
+-> web3.js
 
 ## I will update the readme as I implement features
 
