@@ -53,7 +53,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+No license, This project is for educational purpose only.
 
 
 
