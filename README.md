@@ -64,7 +64,7 @@ Here's the link to download and to the documentation for Metamask wallet [Metama
 1. Open the web page in a browser.
 2. Click on the 'Connect Wallet' button.
 3. If MetaMask is installed and set up, you will be prompted to connect your wallet.
-4. Once connected, your wallet ID and balance will be displayed on the page.
+4. Once connected, your wallet ID, balance and Network ID will be displayed on the page.
 
 ## Future Improvements
 
