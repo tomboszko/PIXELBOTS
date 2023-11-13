@@ -14,6 +14,13 @@ Deployed project [NFT minting](https://tomboszko.github.io/Token/)
 
 This is the first step of the project, it allow user to connect his wallet to the site and display wallet ID and account balance.
 
+I choose to only work with Metamask wallet because it's really user friendly and simple to install.
+To interact with the site you need to install Metamask 
+
+Here's the link to download and to the documentation for Metamask wallet [Metamask.io](https://metamask.io/)
+
+**WARNING: When asking to write your seedphrase, make it carefully because it's your PRIVATE  key to access wallet.**
+
 ### Features
 
 - Connect to MetaMask wallet
