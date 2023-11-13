@@ -8,14 +8,24 @@ Creation (mint) of a NFT serie to learn about smart contracts and blockchain int
 
 Next step is to create a small collection of pixel art robots and allow user to mint.
 
-Deployed project [NFT minting](https://tomboszko.github.io/Token/)
+Deployed project [NFT minting](https://tomboszko.github.io/NFT-minting/)
 
 ## 1 Ethereum Wallet Connection
 
 This is the first step of the project, it allow user to connect his wallet to the site and display wallet ID and account balance.
 
-I choose to only work with Metamask wallet because it's really user friendly and simple to install.
-To interact with the site you need to install Metamask.
+### Features
+
+- Connect to MetaMask wallet
+- Display wallet ID
+- Display wallet balance in Ether
+- Display Network ID
+- Copy to clipboard when wallet ID clicked
+
+
+### to try the features and mint a NFT, you'll need a Metamask wallet connected to Sepolia testnet and with a few ETH in it:
+
+I choose to only work with Metamask wallet because it's "simple & efficace" so:
 
 Here's the link to download and to the documentation for Metamask wallet [Metamask.io](https://metamask.io/)
 
@@ -28,16 +38,11 @@ If you want to interact with Sepolia, you need to add it to your wallet, 2 optio
 
 2 Got to [Chainlist](https://chainlist.org/?search=Sepolia&testnets=true) connect your wallet to the site, then search(including testnets) for Sepolia  with `id:11155111` then add it to your wallet.
 
+You will need some ETH in your wallet to pay the GAS price of minting, hopefully ETH on tesnet are free, you can connect your wallet at this faucet to get some ETH [sepoliafaucet](https://sepoliafaucet.com/)
+
+If it doesn't work, send me your Wallet ID and I'll send you a few ETH.
 
 
-
-### Features
-
-- Connect to MetaMask wallet
-- Display wallet ID
-- Display wallet balance in Ether
-- Display Network ID
-- Copy to clipboard when wallet ID clicked
 
 ## 2 Creation of collection
 
