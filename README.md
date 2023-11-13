@@ -39,6 +39,13 @@ This project is a simple web page that allows users to connect their Ethereum wa
 - Add support for other Ethereum wallet providers.
 - Improve UI/UX design.
 - Add more wallet-related features, such as transaction history.
+- Add minting function
+- add current network/blockain
+- Allow user to copy/past wallet ID
+- Display all the robots pictures as animated gif
+- display minted robots in other view
+- dispaly the count of robots minted
+- ...
 
 ## Contributing
 
