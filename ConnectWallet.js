@@ -22,6 +22,25 @@ async function updateInfo() {
         }
         const account = accounts[0];
         console.log("Connected account: ", account);
+
+    // Define a mapping from network IDs to names
+    const networkIdToName = {
+        "1": "Mainnet",
+        "3": "Ropsten",
+        "4": "Rinkeby",
+        "5": "Goerli",
+        "42": "Kovan",
+        "11155111": "Sepolia Testnet"
+        // Add more if needed
+    };
+
+    // Get the network ID
+    const networkId = await web3.eth.net.getId();
+
+    // Get the network name from the mapping, or 'Unknown' if the ID is not in the mapping
+    const networkName = networkIdToName[networkId] || "Unknown";
+
+    console.log("Connected network: ", networkName);
         
         // Get the account's balance in Wei
         const balanceWei = await web3.eth.getBalance(account);
