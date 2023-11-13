@@ -26,6 +26,7 @@ Here's the link to download and to the documentation for Metamask wallet [Metama
 - Connect to MetaMask wallet
 - Display wallet ID
 - Display wallet balance in Ether
+- Display Network ID
 - Copy to clipboard when wallet ID clicked
 
 ## 2 Creation of collection
@@ -37,15 +38,22 @@ Here's the link to download and to the documentation for Metamask wallet [Metama
 - JavaScript
 - HTML
 - CSS
-- Web3.js `npm install web3@^4.2.2`
+  
+- **Web3.js**
+  
+  `npm install web3@^4.2.2`
 
     Web3.js is a collection of libraries that allow you to interact with a local or remote Ethereum node using HTTP, IPC, or WebSocket. It's used to interact with the Ethereum blockchain, send        transactions, interact with smart contracts, and more.
   
-- OpenZeppelin Contracts `npm install @openzeppelin/contracts@^5.0.0`
+- **OpenZeppelin Contracts**
+  
+  `npm install @openzeppelin/contracts@^5.0.0`
   
     OpenZeppelin Contracts is a library for secure smart contract development. It provides implementations of standards like ERC20 and ERC721 which you can deploy as-is or extend to suit your         needs, as well as Solidity components to build custom contracts and more complex decentralized systems.
   
-- Solidity Compiler (solc) `npm install solc@^0.8.20`
+- **Solidity Compiler (solc)**
+  
+  `npm install solc@^0.8.20`
 
     The Solidity Compiler (solc) is used to compile Solidity source code into a format that can be run on the Ethereum Virtual Machine (EVM). It's necessary for deploying smart contracts to the       Ethereum blockchain.
 
@@ -56,7 +64,7 @@ Here's the link to download and to the documentation for Metamask wallet [Metama
 1. Open the web page in a browser.
 2. Click on the 'Connect Wallet' button.
 3. If MetaMask is installed and set up, you will be prompted to connect your wallet.
-4. Once connected, your wallet ID and balance will be displayed on the page.
+4. Once connected, your wallet ID, balance and Network ID will be displayed on the page.
 
 ## Future Improvements
 
