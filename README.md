@@ -34,7 +34,8 @@ This project is a simple web page that allows users to connect their Ethereum wa
  ## Install the dependencies:
 Navigate to the project directory and run those commands:
 
-    ```bash Install Web3.js:
+    ```javascript 
+    bash Install Web3.js:
         ```
         npm install web3@^4.2.2
         ```
