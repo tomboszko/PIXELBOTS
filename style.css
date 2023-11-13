@@ -74,9 +74,8 @@ header {
 
 #networkDisplay {
     color: var(--text-color);
-    font-size: 20px;
-    background-color: #4CAF50;
-    padding: 10px;
+    font-size: 12px;
+    
 }
 
 @media screen and (max-width: 600px) {
