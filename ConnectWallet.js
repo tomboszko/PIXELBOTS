@@ -30,17 +30,19 @@ async function updateInfo() {
         "4": "Rinkeby",
         "5": "Goerli",
         "42": "Kovan",
-        "11155111": "Sepolia Testnet"
+        "11155111": "Sepolia Testnet" // this the network used for testing
         // Add more if needed
     };
 
-    // Get the network ID
-    const networkId = await web3.eth.net.getId();
+        // Get the network ID
+        const networkId = await web3.eth.net.getId();
 
-    // Get the network name from the mapping, or 'Unknown' if the ID is not in the mapping
-    const networkName = networkIdToName[networkId] || "Unknown";
+        // Get the network name from the mapping, or 'Unknown' if the ID is not in the mapping
+        const networkName = networkIdToName[networkId] || "Unknown";
 
-    console.log("Connected network: ", networkName);
+        // Update the text content of the 'networkDisplay' element
+        document.getElementById('networkDisplay').textContent = `Network: ${networkName}`;
+
         
         // Get the account's balance in Wei
         const balanceWei = await web3.eth.getBalance(account);
@@ -64,7 +66,6 @@ async function updateInfo() {
 }
 
 // Function to copy wallet ID to clipboard when clicked
-
 window.copyToClipboard = function() {
     let walletId = document.getElementById('walletIdDisplay').title;
     console.log('walletId:', walletId);
