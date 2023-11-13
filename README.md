@@ -28,6 +28,24 @@ This project is a simple web page that allows users to connect their Ethereum wa
 - HTML
 - CSS
 - Web3.js
+- OpenZeppelin Contracts
+- Solidity Compiler (solc)
+
+ ## Install the dependencies:
+Navigate to the project directory and run those commands:
+
+    ```bash Install Web3.js:
+        ```
+        npm install web3@^4.2.2
+        ```
+    - Install OpenZeppelin Contracts:
+        ```
+        npm install @openzeppelin/contracts@^5.0.0
+        ```
+    - Install Solidity Compiler (solc):
+        ```
+        npm install solc@^0.8.20
+        ```
 
 ## How to Use
 
