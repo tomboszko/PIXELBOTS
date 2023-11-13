@@ -81,7 +81,7 @@ document.getElementById('connectButton').addEventListener('click', async () => {
             console.log("Non-Ethereum browser detected. Consider trying MetaMask!");
             return;
         }
-
+        // Request the user's accounts
         let accounts = await window.ethereum.request({ method: 'eth_accounts' });
 
         if (accounts.length > 0) {
@@ -118,7 +118,7 @@ window.ethereum.on('accountsChanged', (accounts) => {
 
 // Listen for network change events
 window.ethereum.on('chainChanged', (chainId) => {
-    window.location.reload(); // Or call updateInfo() based on your preference
+    window.location.reload(); // Or call updateInfo() 
 });
 
 // Listen for the 'disconnect' event
