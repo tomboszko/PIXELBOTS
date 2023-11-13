@@ -2,7 +2,7 @@
 
 ## Personal project 
 
-Creation (mint) of a NFT series to learn about smart contracts and blockchain interactions
+Creation (mint) of a NFT serie to learn about smart contracts and blockchain interactions
 
 ## I will update the readme as I implement features
 
@@ -80,10 +80,7 @@ If you want to interact with Sepolia, you need to add it to your wallet, 2 optio
 
 - Add support for other Ethereum wallet providers.
 - Improve UI/UX design.
-- Add more wallet-related features, such as transaction history.
 - Add minting function
-- add current network/blockain
-- Allow user to copy/past wallet ID
 - Display all the robots pictures as animated gif
 - display minted robots in other view
 - dispaly the count of robots minted
