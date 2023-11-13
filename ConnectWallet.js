@@ -10,29 +10,32 @@ async function updateInfo() {
         // Check if MetaMask or a compatible provider is available
         if (!window.ethereum) {
             console.log("Non-Ethereum browser detected. Consider trying MetaMask!");
+            alert("Non-Ethereum browser detected. Consider trying MetaMask!");
             return;
         }
+
         // Request the connected accounts
         const accounts = await window.ethereum.request({ method: 'eth_accounts' });
 
         if (accounts.length === 0) {
             console.log("No account connected");
-            document.getElementById('connectButton').innerText = 'Connect Wallet';
+            resetUI();
             return;
         }
+
         const account = accounts[0];
         console.log("Connected account: ", account);
 
-    // Define a mapping from network IDs to names
-    const networkIdToName = {
-        "1": "Mainnet",
-        "3": "Ropsten",
-        "4": "Rinkeby",
-        "5": "Goerli",
-        "42": "Kovan",
-        "11155111": "Sepolia Testnet" // this the network used for testing
-        // Add more if needed
-    };
+        // Define a mapping from network IDs to names
+        const networkIdToName = {
+            "1": "Mainnet",
+            "3": "Ropsten",
+            "4": "Rinkeby",
+            "5": "Goerli",
+            "42": "Kovan",
+            "11155111": "Sepolia Testnet" // this the network used for testing
+            // Add more if needed
+        };
 
         // Get the network ID
         const networkId = await web3.eth.net.getId();
@@ -43,10 +46,9 @@ async function updateInfo() {
         // Update the text content of the 'networkDisplay' element
         document.getElementById('networkDisplay').textContent = `Network: ${networkName}`;
 
-        
         // Get the account's balance in Wei
         const balanceWei = await web3.eth.getBalance(account);
-        console.log("Balance: ", await web3.eth.getBalance(account));
+        console.log("Balance: ", balanceWei);
         
         // Convert Wei to Ether and display with only two digits after the decimal point
         const balanceEth = web3.utils.fromWei(balanceWei, 'ether');
@@ -65,20 +67,12 @@ async function updateInfo() {
     }
 }
 
-// Function to copy wallet ID to clipboard when clicked
-window.copyToClipboard = function() {
-    let walletId = document.getElementById('walletIdDisplay').title;
-    console.log('walletId:', walletId);
-    console.log('navigator.clipboard:', navigator.clipboard);
-    navigator.clipboard.writeText(walletId).then(function() {
-        console.log('Copying to clipboard was successful!');
-    }, function(err) {
-        console.error('Could not copy text: ', err);
-    });
+// Function to reset UI elements
+function resetUI() {
+    document.getElementById('connectButton').innerText = 'Connect Wallet';
+    document.getElementById('walletIdDisplay').innerText = '';
+    document.getElementById('balanceDisplay').innerText = '';
 }
-
-// Call updateInfo when the script runs
-updateInfo();
 
 // Event listener for the connect button
 document.getElementById('connectButton').addEventListener('click', async () => {
@@ -95,19 +89,43 @@ document.getElementById('connectButton').addEventListener('click', async () => {
             return;
         }
 
-        accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
-        updateInfo();
-        setInterval(updateInfo, 10000);
+        try {
+            accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
+            updateInfo();
+        } catch (error) {
+            if (error.code === 4001) {
+                // User rejected the request
+                console.log("User denied account access");
+            } else {
+                console.error("Error requesting account access: ", error);
+            }
+        }
+
     } catch (error) {
         console.error("Error during account access: ", error);
     }
 });
 
+// Listen for account change events
+window.ethereum.on('accountsChanged', (accounts) => {
+    if (accounts.length > 0) {
+        updateInfo();
+    } else {
+        console.log("Wallet disconnected");
+        resetUI();
+    }
+});
+
+// Listen for network change events
+window.ethereum.on('chainChanged', (chainId) => {
+    window.location.reload(); // Or call updateInfo() based on your preference
+});
+
 // Listen for the 'disconnect' event
 window.ethereum.on('disconnect', () => {
     console.log('MetaMask is disconnected');
-    // Reset the UI elements
-    document.getElementById('connectButton').innerText = 'Connect Wallet';
-    document.getElementById('walletIdDisplay').innerText = '';
-    document.getElementById('balanceDisplay').innerText = '';
+    resetUI();
 });
+
+// Call updateInfo when the script runs
+updateInfo();
