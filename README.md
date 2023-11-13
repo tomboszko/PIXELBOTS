@@ -26,6 +26,7 @@ Here's the link to download and to the documentation for Metamask wallet [Metama
 - Connect to MetaMask wallet
 - Display wallet ID
 - Display wallet balance in Ether
+- Display Network ID
 - Copy to clipboard when wallet ID clicked
 
 ## 2 Creation of collection
