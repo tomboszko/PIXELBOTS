@@ -38,17 +38,21 @@ Here's the link to download and to the documentation for Metamask wallet [Metama
 - JavaScript
 - HTML
 - CSS
-- Web3.js
+  
+- **Web3.js**
+  
   `npm install web3@^4.2.2`
 
     Web3.js is a collection of libraries that allow you to interact with a local or remote Ethereum node using HTTP, IPC, or WebSocket. It's used to interact with the Ethereum blockchain, send        transactions, interact with smart contracts, and more.
   
-- OpenZeppelin Contracts
+- **OpenZeppelin Contracts**
+  
   `npm install @openzeppelin/contracts@^5.0.0`
   
     OpenZeppelin Contracts is a library for secure smart contract development. It provides implementations of standards like ERC20 and ERC721 which you can deploy as-is or extend to suit your         needs, as well as Solidity components to build custom contracts and more complex decentralized systems.
   
-- Solidity Compiler (solc)
+- **Solidity Compiler (solc)**
+  
   `npm install solc@^0.8.20`
 
     The Solidity Compiler (solc) is used to compile Solidity source code into a format that can be run on the Ethereum Virtual Machine (EVM). It's necessary for deploying smart contracts to the       Ethereum blockchain.
