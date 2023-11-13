@@ -8,7 +8,7 @@ Creation (mint) of a NFT serie to learn about smart contracts and blockchain int
 
 Next step is to create a small collection of pixel art robots and allow user to mint.
 
-Deployed project [NFT minting](https://tomboszko.github.io/Token/)
+Deployed project [NFT minting](https://tomboszko.github.io/NFT-minting/)
 
 ## 1 Ethereum Wallet Connection
 
