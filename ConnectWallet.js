@@ -1,3 +1,6 @@
+
+// Script to manage the connection to the user's wallet
+
 // Import Web3.js from a CDN (Content Delivery Network)
 const web3 = new Web3(window.ethereum);
 
@@ -35,7 +38,7 @@ async function updateInfo() {
 
         // Update button text
         document.getElementById('connectButton').innerText = 'Connected';
-        
+
     } catch (error) {
         console.error("Error updating balance: ", error);
     }
