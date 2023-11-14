@@ -25,14 +25,13 @@ body {
     text-align: center;
 }
 
-h1 {
-    margin-bottom: 2rem;
-}
+
 
 .button,
 #connectButton,
 #balanceDisplay,
-#walletIdDisplay {
+#walletIdDisplay,
+#mintButton {
     background-color: var(--primary-color);
     color: var(--text-color);
     padding: var(--button-padding);
@@ -47,12 +46,28 @@ h1 {
     margin: 5px;
 }
 
-.button:hover,
-#connectButton:hover {
+
+#connectButton:hover,
+#mintButton:hover {
     background-color: var(--hover-color);
     color: var(--primary-color);
 }
 
+#mintButton:active {
+    scale: 0.97;
+
+
+}
+
+@keyframes blink {
+    0% {opacity: 1;}
+    50% {opacity: 0.5;}
+    100% {opacity: 1;}
+}
+
+#mintButton {
+    animation: blink 1s linear infinite;
+}
 /*header {
     width: 100%;
     margin-top: 1rem;
@@ -94,18 +109,13 @@ header a:hover {
     border: var(--border-style);
 }
 
-#networkDisplay {
-    color: var(--text-color);
-    font-size: 12px;
-    
-}
 
 @media screen and (max-width: 600px) {
     h1 {
         font-size: 1.5rem;
     }
 
-    .button,
+    
     #connectButton,
     #balanceDisplay,
     #walletIdDisplay {
