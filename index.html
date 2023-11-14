@@ -4,29 +4,32 @@
     <meta charset="UTF-8">
     <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self';">-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mint your own unique TOMS NFTs! Connect your Ethereum wallet, view your balance, and join the network. Start your NFT collection today.">
+    <meta name="description" content="Mint your own unique PIXELBOT NFTs! Connect your Ethereum wallet, view your balance, and join the network. Start your NFT collection today.">
     <link rel="stylesheet" href="style.css">
-    <script type="module" defer src="ConnectWallet.js"></script>
-    <script type="module" defer src="clipboard.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
     <title>PIXELBOT</title>
 </head>
 <body>
     <header>
-        <a href="#" id="walletIdDisplay" onclick="copyToClipboard()">Wallet ID</a>
-        <a href="#" id="connectButton">Connect Wallet</a>
-        <a href="#" id="balanceDisplay">Balance: 0 ETH</a>
-        <a href="#" id="networkDisplay">Network</a>
+        <nav>
+            <a href="#" id="walletIdDisplay" onclick="copyToClipboard()">Wallet ID</a>
+            <a href="#" id="connectButton">Connect Wallet</a>
+            <a href="#" id="balanceDisplay">Balance: 0 ETH</a>
+            <a href="#" id="networkDisplay">Network</a>
+        </nav>
     </header>
     <main>
-        <!-- this is just to have an cool illustration, it will be improved-->
-        <img src="https://th.bing.com/th/id/OIG.22LmUgnzsIgPoNLvPSm6?pid=ImgGn&w=1024&h=1024&rs=1" alt="RobotPixel" width="300" height="300">
+        <section>
+            <!-- this is just to have a cool illustration, it will be improved-->
+            <img src="https://th.bing.com/th/id/OIG.22LmUgnzsIgPoNLvPSm6?pid=ImgGn&w=1024&h=1024&rs=1" alt="Pixel Art Robot" width="300" height="300">
             <h1>Get your PIXELBOT NFT here!</h1>
             <button id="mintButton">MINT</button>
+        </section>
     </main>
     <footer>
         <p>© 2023 All rights reserved by the Toma-Cola Company</p>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
+    <script type="module" defer src="ConnectWallet.js"></script>
+    <script type="module" defer src="clipboard.js"></script>
 </body>
 </html>
