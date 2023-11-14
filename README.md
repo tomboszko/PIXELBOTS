@@ -10,6 +10,7 @@ Creation (mint) of a NFT's serie to learn about smart contracts and blockchain i
 
 Deployed project [PIXELBOTS](https://tomboszko.github.io/PIXELBOTS/)
 
+
 ## 1 Ethereum Wallet Connection
 
 This is the first step of the project, it allow user to connect his wallet to the site and display wallet ID and account balance.
@@ -23,7 +24,9 @@ This is the first step of the project, it allow user to connect his wallet to th
 - Copy to clipboard when wallet ID clicked
 
 
-### to try the features and mint a NFT, you'll need a Metamask wallet connected to Sepolia testnet with a few ETH in it:
+## Instructions
+
+### to mint a NFT, you'll need a Metamask wallet connected to Sepolia testnet with a few ETH in it:
 
 I choose to only work with Metamask wallet because it's "simple & efficace" so:
 
