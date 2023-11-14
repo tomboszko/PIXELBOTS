@@ -49,11 +49,29 @@ h1 {
     color: var(--primary-color);
 }
 
-header {
+/*header {
     width: 100%;
     margin-top: 1rem;
     margin-right: auto;
     margin-left: auto;
+}*/
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+header a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    margin: 0 10px;
+    display: inline-block;
+}
+header a:hover {
+    background-color: #ddd;
+    color: black;
 }
 
 #connectButton,
