@@ -30,7 +30,7 @@ I choose to only work with Metamask wallet because it's "simple & efficace" so:
 
 Here's the link to download and to the documentation for Metamask wallet [Metamask.io](https://metamask.io/)
 
-**WARNING: When asking to write your seedphrase, make it carefully because it's your PRIVATE  key to access wallet.**
+** ⚠️ When asking to write your seedphrase, make it carefully because it's your PRIVATE  key to access wallet ⚠️ **
 
 The NFT will be minted on Sepolia Testnet, it's a test blockchain who mimic Ethereum Mainnet.
 If you want to interact with Sepolia, you need to add it to your wallet, 2 options:
