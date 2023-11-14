@@ -70,8 +70,9 @@ async function updateInfo() {
 // Function to reset UI elements
 function resetUI() {
     document.getElementById('connectButton').innerText = 'Connect Wallet';
-    document.getElementById('walletIdDisplay').innerText = '';
-    document.getElementById('balanceDisplay').innerText = '';
+    document.getElementById('walletIdDisplay').innerText = 'Wallet ID: ...';
+    document.getElementById('balanceDisplay').innerText = 'Balance: 0 ETH';
+    document.getElementById('networkDisplay').innerText = '';
 }
 
 // Event listener for the connect button
@@ -129,3 +130,4 @@ window.ethereum.on('disconnect', () => {
 
 // Call updateInfo when the script runs
 updateInfo();
+
