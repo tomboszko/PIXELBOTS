@@ -24,7 +24,7 @@ This is the first step of the project, it allow user to connect his wallet to th
 - Copy to clipboard when wallet ID clicked
 
 
-### to try the features and mint a NFT, you'll need a Metamask wallet connected to Sepolia testnet and with a few ETH in it:
+### to try the features and mint a NFT, you'll need a Metamask wallet connected to Sepolia testnet with a few ETH in it:
 
 I choose to only work with Metamask wallet because it's "simple & efficace" so:
 
