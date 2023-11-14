@@ -4,10 +4,9 @@
 
 Creation (mint) of a NFT's serie to learn about smart contracts and blockchain interactions.
 
-## I will update the readme as I implement features
+🤖 I want to make it fun so why not some cute pixel art robots ?
 
-Next step is to create a small collection of pixel art robots and allow user to mint.
-
+### I will update the readme as I implement features
 
 Deployed project [PIXELBOTS](https://tomboszko.github.io/PIXELBOTS/)
 
