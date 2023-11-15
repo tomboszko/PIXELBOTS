@@ -59,7 +59,13 @@ creation of metadata processing...
 - JavaScript
 - HTML
 - CSS
+
+- **openAI**
+
+  `npm install openai`
   
+  openai is a Node.js client library for the OpenAI API. It allows you to interact with OpenAI's models, such as GPT-3, from your Node.js applications.
+
 - **Web3.js**
   
   `npm install web3@^4.2.2`
