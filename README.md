@@ -50,6 +50,8 @@ If it doesn't work, send me your Wallet ID and I'll send you a few ETH.
 
 ## 2 Creation of collection
 
+I added a new challenge: send a prompt to create pixelbot picture to chatgpt then, add it to metadata of the NFT minted.
+
 <span style="color:red">This step is actually in process, stay tuned.</span>
 
 creation of metadata processing...
@@ -59,6 +61,7 @@ creation of metadata processing...
 - JavaScript
 - HTML
 - CSS
+- OpenAI API 
   
 - **Web3.js**
   
