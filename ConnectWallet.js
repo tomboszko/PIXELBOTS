@@ -1,4 +1,3 @@
-
 // Script to manage the connection to the user's wallet
 
 // Import Web3.js from a CDN (Content Delivery Network)
@@ -22,7 +21,7 @@ async function updateInfo() {
             resetUI();
             return;
         }
-
+        
         const account = accounts[0];
         console.log("Connected account: ", account);
 
@@ -65,6 +64,7 @@ async function updateInfo() {
     } catch (error) {
         console.error("Error updating balance: ", error);
     }
+    
 }
 
 // Function to reset UI elements
@@ -130,4 +130,6 @@ window.ethereum.on('disconnect', () => {
 
 // Call updateInfo when the script runs
 updateInfo();
+
+
 
