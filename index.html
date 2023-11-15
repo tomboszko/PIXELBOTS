@@ -5,42 +5,45 @@
     <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self';">-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Mint your own unique PIXELBOT NFTs! Connect your Ethereum wallet, view your balance, and join the network. Start your NFT collection today.">
+    <link rel="icon" href="/images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <title>PIXELBOTS</title>
 </head>
 <body>
 
     <header>
-        <nav>
-            <a class="display" href="#" id="walletIdDisplay" onclick="copyToClipboard()">Wallet ID</a>
-            <a class="button" href="#" id="connectButton">Connect Wallet</a>
-            <a class="display" href="#" id="balanceDisplay">Balance: 0 ETH</a>
-            <a class="display" href="#" id="networkDisplay">Network</a>
-        </nav>
+        <div class="display" id="networkDisplay">Network</div>
+            <div class="display" id="walletIdDisplay" onclick="copyToClipboard()">Wallet ID</div>
+            <div class="display" id="balanceDisplay">Balance: 0 ETH</div>
+            <div class="button" id="connectButton">Connect Wallet</div>
+       
     </header>
 
     <main>
         <h1>🤖 PIXELBOTS 🤖</h1>
-        <!--<section id="intro">
-            <p>PIXELBOTS is a personal project to learn about NFTs and the Ethereum blockchain. 
-                The main purpose is to create a collection of 25 unique NFTs that can be minted by anyone.
-                All pictures are AI generated and unique.
-                 The project is inspired by <a href="https://www.larvalabs.com/cryptopunks" target="_blank">CryptoPunks</a> and <a href="https://www.larvalabs.com/cryptokitties" target="_blank">CryptoKitties</a>.</p>
+
+        <section id="intro">
+            <p id="projectIntro">PIXELBOTS is a personal project to learn how to interact with Ethereum blockchain. 
+            All pictures are AI generated and unique, There are 25 different types of bots, they can be minted via Sepolia testnet.
             </p>
-        </section>-->
+        </section>
         
         <section id="displayBots">
             <!-- this is just to have a cool illustration, it will be improved-->
             <img class="pixelBot" id="bot1" src="PixelBots/1.CuddleBot.webp" alt="CuddleBot" width="300" height="300">
-            <h1>Get your PIXELBOT NFT here!</h1>
+            <h2>Get your PIXELBOT NFT here!</h2>
             <button class="button" id="mintButton">MINT</button>
         </section>
     </main>
 
     <footer>
         <div id="contact">
-            <a class="link" href="https://github.com/tomboszko" target="_blank" >GitHub</a>
-            <a class="link" href="https://www.linkedin.com/in/thomas-gomree/" target="_blank">LinkedIn</a>
+            <a class="link" href="https://github.com/tomboszko" target="_blank">
+                <img src="images/github-mark-white.png" alt="GitHub Logo" width="20" height="20">
+            </a>
+            <a class="link" href="https://www.linkedin.com/in/thomas-gomree/" target="_blank">
+                <img src="/images/LI-In-Bug.png" alt="linkedin logo" width="24" height="20">
+            </a>
         </div>
         <p>© 2023 All rights reserved by the Toma-Cola Company™</p>
     </footer>

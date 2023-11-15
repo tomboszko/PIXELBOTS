@@ -8,19 +8,18 @@
     --background-color: black;
     --hover-color: #555;
     --font-family: 'Poppins', sans-serif;
-    --button-padding: 8px 16px;
     --border-style: 2px solid var(--primary-color);
 }
 
 main {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 body {
     background-color: var(--background-color);
     color: var(--primary-color);
     font-family: var(--font-family);
-    font-weight: 900;
+    
     height: 100vh;
     margin: 0;
     text-align: center;
@@ -33,16 +32,16 @@ body {
 #mintButton {
     background-color: var(--primary-color);
     color: var(--text-color);
-    padding: var(--button-padding);
+    padding: 0.4rem;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 14px;
+    font-size: 0.4rem;
     font-weight: 900;
     transition: background-color 0.3s, color 0.3s;
     cursor: pointer;
     border: var(--border-style);
-    margin: 5px;
+    margin: 0.3rem;
 }
 
 
@@ -64,36 +63,40 @@ body {
 
 #mintButton {
     animation: blink 1s linear infinite;
+    font-size: 1.5rem;
 }
-/*header {
-    width: 100%;
-    margin-top: 1rem;
-    margin-right: auto;
-    margin-left: auto;
-}*/
+
 
 header {
     background-color: #333;
     color: white;
-    padding: 10px 0;
-    text-align: center;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-left: auto; 
+    margin-right: auto;
+    
 }
-header a {
-    color: white;
-    padding: 14px 20px;
-    text-decoration: none;
-    margin: 0 10px;
-    display: inline-block;
+
+H1 {
+    font-size: 3rem;
+    margin: 0.5rem;
 }
-header a:hover {
-    background-color: #ddd;
-    color: black;
+
+
+#projectIntro {
+    width: 300px;
+    color: #fff;
+    font-size: 0.5rem;
+    margin-right: auto;
+    margin-left: auto;
 }
+
 
 #connectButton,
 #balanceDisplay,
 #walletIdDisplay {
-    font-size: 12px;
+    font-size: 1rem;
 }
 
 #balanceDisplay,
@@ -113,24 +116,14 @@ footer {
     width: 100%;
     color: var(--text-color);
     text-align: center;
-    font-size: 10px;
+    font-size: 0.5rem;
     padding-bottom: 0.5rem;
 }
 
 .link {
-    color: var(--tertiary-color);
-    font-size: 12px;
+    margin: 1rem;
+
 }
 
-@media screen and (max-width: 600px) {
-    h1 {
-        font-size: 1.5rem;
-    }
 
-    #connectButton,
-    #balanceDisplay,
-    #walletIdDisplay {
-        font-size: 12px;
-        padding: 6px 12px;
-    }
-}
+
