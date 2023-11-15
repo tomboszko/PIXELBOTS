@@ -3,11 +3,10 @@
 :root {
     --primary-color: #ed07ed;
     --secondary-color: #333;
-    --tertiray-color:  #9907ed;
+    --tertiary-color:  #9907ed;
     --text-color: #fff;
     --background-color: black;
     --hover-color: #555;
-
     --font-family: 'Poppins', sans-serif;
     --button-padding: 8px 16px;
     --border-style: 2px solid var(--primary-color);
@@ -26,9 +25,6 @@ body {
     margin: 0;
     text-align: center;
 }
-
-
-
 
 .button,
 #connectButton,
@@ -58,8 +54,6 @@ body {
 
 #mintButton:active {
     scale: 0.97;
-
-
 }
 
 @keyframes blink {
@@ -121,21 +115,18 @@ footer {
     text-align: center;
     font-size: 10px;
     padding-bottom: 0.5rem;
-
 }
 
 .link {
-    color: var(--tertiray-color);
+    color: var(--tertiary-color);
     font-size: 12px;
 }
-
 
 @media screen and (max-width: 600px) {
     h1 {
         font-size: 1.5rem;
     }
 
-    
     #connectButton,
     #balanceDisplay,
     #walletIdDisplay {
