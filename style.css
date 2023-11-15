@@ -36,12 +36,14 @@ body {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 0.4rem;
-    font-weight: 900;
     transition: background-color 0.3s, color 0.3s;
     cursor: pointer;
     border: var(--border-style);
     margin: 0.3rem;
+}
+
+#connectButton {
+margin-right: 0.6rem;
 }
 
 
@@ -68,7 +70,7 @@ body {
 
 
 header {
-    background-color: #333;
+    background-color: #282828;
     color: white;
     display: flex;
     justify-content: end;
@@ -95,8 +97,9 @@ H1 {
 
 #connectButton,
 #balanceDisplay,
-#walletIdDisplay {
-    font-size: 1rem;
+#walletIdDisplay,
+#networkDisplay {
+    font-size: 0.5rem;
 }
 
 #balanceDisplay,
