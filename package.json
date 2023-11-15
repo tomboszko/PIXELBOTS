@@ -1,9 +1,8 @@
 {
   "dependencies": {
     "@openzeppelin/contracts": "^5.0.0",
-    "web3": "^4.2.2",
-    "solc": "^0.8.20"
+    "dotenv": "^8.6.0",
+    "solc": "^0.8.23-fixed",
+    "web3": "^4.2.2"
   }
 }
-
-
