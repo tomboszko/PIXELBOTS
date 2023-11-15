@@ -1,14 +1,15 @@
-# NFT minting 
+# PIXELBOTS
 
 ## Personal project 
 
-Creation (mint) of a NFT serie to learn about smart contracts and blockchain interactions
+Creation (mint) of a NFT's serie to learn about smart contracts and blockchain interactions.
 
-## I will update the readme as I implement features
+🤖 I want to make it fun so why not some cute pixel art robots ?
 
-Next step is to create a small collection of pixel art robots and allow user to mint.
+### I will update the readme as I implement features
 
-Deployed project [NFT minting](https://tomboszko.github.io/NFT-minting/)
+Deployed project [PIXELBOTS](https://tomboszko.github.io/PIXELBOTS/)
+
 
 ## 1 Ethereum Wallet Connection
 
@@ -23,18 +24,22 @@ This is the first step of the project, it allow user to connect his wallet to th
 - Copy to clipboard when wallet ID clicked
 
 
-### to try the features and mint a NFT, you'll need a Metamask wallet connected to Sepolia testnet and with a few ETH in it:
+## Instructions
+
+### to mint a NFT, you'll need a Metamask wallet connected to Sepolia testnet with a few ETH in it:
 
 I choose to only work with Metamask wallet because it's "simple & efficace" so:
 
 Here's the link to download and to the documentation for Metamask wallet [Metamask.io](https://metamask.io/)
 
-**WARNING: When asking to write your seedphrase, make it carefully because it's your PRIVATE  key to access wallet.**
+⚠️ **When asking to write your seedphrase, make it carefully because it's your PRIVATE  key to access wallet** ⚠️
 
 The NFT will be minted on Sepolia Testnet, it's a test blockchain who mimic Ethereum Mainnet.
 If you want to interact with Sepolia, you need to add it to your wallet, 2 options:
 
 1 Go to [Alchemy](https://www.alchemy.com/overviews/sepolia-testnet) to see docs and how to add manually Sepolia to your wallet.
+
+OR
 
 2 Got to [Chainlist](https://chainlist.org/?search=Sepolia&testnets=true) connect your wallet to the site, then search(including testnets) for Sepolia  with `id:11155111` then add it to your wallet.
 
@@ -43,10 +48,11 @@ You will need some ETH in your wallet to pay the GAS price of minting, hopefully
 If it doesn't work, send me your Wallet ID and I'll send you a few ETH.
 
 
-
 ## 2 Creation of collection
 
 <span style="color:red">This step is actually in process, stay tuned.</span>
+
+creation of metadata processing...
 
 ## Technologies Used
 
@@ -72,8 +78,6 @@ If it doesn't work, send me your Wallet ID and I'll send you a few ETH.
 
     The Solidity Compiler (solc) is used to compile Solidity source code into a format that can be run on the Ethereum Virtual Machine (EVM). It's necessary for deploying smart contracts to the       Ethereum blockchain.
 
-**NOTE:** Ensure that you run the last version for all these depedencies.
-
 ## How to Use
 
 1. Open the web page in a browser.
@@ -84,20 +88,18 @@ If it doesn't work, send me your Wallet ID and I'll send you a few ETH.
 ## Future Improvements
 
 - Add support for other Ethereum wallet providers.
-- Improve UI/UX design.
+- improve security
+- Improve UI/UX design
 - Add minting function
-- Display all the robots pictures as animated gif
-- display minted robots in other view
-- dispaly the count of robots minted
+- Display all the robots pictures as animated gif /modal
+- display minted robots in other view with ownerID
+- display the count of robots minted
 - ...
 
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-## License
-
-No license, This project is for educational purpose only.
 
 
 
