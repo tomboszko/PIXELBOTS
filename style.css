@@ -66,6 +66,8 @@ margin-right: 0.6rem;
 #mintButton {
     animation: blink 1s linear infinite;
     font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.3rem;
 }
 
 
