@@ -1,3 +1,6 @@
+
+#Creation a NFT's serie to learn about smart contracts and blockchain interactions.
+
 # PIXELBOTS
 
 ## Personal project 
