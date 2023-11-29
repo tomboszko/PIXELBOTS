@@ -34,27 +34,28 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-var _this = this;
-var express = require('express');
+require('dotenv').config();
+var apiKey = process.env.API_KEY;
+
 var OpenAI = require('openai');
-var app = express();
-var openai = new OpenAI(process.env.API_KEY);
-app.get('/api/chat', function (req, res) { return __awaiter(_this, void 0, void 0, function () {
-    var chatCompletion;
-    return __generator(this, function (_a) {
-        switch (_a.label) {
-            case 0: return [4 /*yield*/, openai.chat.completions.create({
-                    messages: [{ role: 'user', content: 'Say this is a test' }],
-                    model: 'gpt-3.5-turbo',
-                })];
-            case 1:
-                chatCompletion = _a.sent();
-                res.json(chatCompletion);
-                return [2 /*return*/];
-        }
+var openai = new OpenAI(apiKey);
+//test call to openai
+function main() {
+    return __awaiter(this, void 0, void 0, function () {
+        var chatCompletion;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0: return [4 /*yield*/, openai.chat.completions.create({
+                        messages: [{ role: 'user', content: 'Say this is a test' }],
+                        model: 'gpt-3.5-turbo',
+                    })];
+                case 1:
+                    chatCompletion = _a.sent();
+                    console.log(chatCompletion);
+                    return [2 /*return*/];
+            }
+        });
     });
-}); });
-app.listen(3000, function () { return console.log('Server listening on port 3000'); });
-fetch('http://localhost:3000/api/chat')
-    .then(function (response) { return response.json(); })
-    .then(function (data) { return console.log(data); });
+}
+main();
+
