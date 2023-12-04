@@ -5,7 +5,7 @@ const web3 = new Web3(window.ethereum);
 const contractAddress = '0xYourContractAddress';
 
 // The ABI (Application Binary Interface) of the smart contract
-const contractABI = [...]; // Replace with contract's ABI
+
 
 // Create a new instance of the contract
 const contract = new web3.eth.Contract(contractABI, contractAddress);

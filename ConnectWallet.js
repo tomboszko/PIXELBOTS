@@ -27,7 +27,7 @@ async function updateInfo() {
 
         // Define a mapping from network IDs to names
         const networkIdToName = {
-            "1": "Mainnet",
+            "1": "Mainnet", //This is the mainnet\\
             "3": "Ropsten",
             "4": "Rinkeby",
             "5": "Goerli",

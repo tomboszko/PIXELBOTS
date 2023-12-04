@@ -7,12 +7,12 @@
     <meta name="description" content="Mint your own unique PIXELBOT NFTs! Connect your Ethereum wallet, view your balance, and join the network. Start your NFT collection today.">
     <link rel="icon" href="/images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <script src="AICall.js"></script>
     <title>PIXELBOTS</title>
 </head>
-<body>node AICall.js
+<body>
 
     <header>
+        <div class="button" id="helpButton">Help</div>
         <div class="display" id="networkDisplay">Network</div>
             <div class="display" id="walletIdDisplay" onclick="copyToClipboard()">Wallet ID</div>
             <div class="display" id="balanceDisplay">Balance: 0 ETH</div>
@@ -21,7 +21,7 @@
     </header>
 
     <main>
-        <h1>🤖 PIXELBOTS 🤖</h1>
+        <h1>PIXELBOTS</h1>
 
         <section id="intro">
             <p id="projectIntro">PIXELBOTS is a personal project to learn how to interact with Ethereum blockchain. 
@@ -31,10 +31,14 @@
         
         <section id="displayBots">
             <!-- this is just to have a cool illustration, it will be improved-->
-            <img class="pixelBot" id="bot1" src="PixelBots/1.CuddleBot.webp" alt="CuddleBot" width="300" height="300">
-            <h2>Get your PIXELBOT NFT here!</h2>
-            <button class="button" id="mintButton">MINT</button>
+            <img class="pixelBot" id="bot1" src="images/02.png" alt="" width="200" height="200">
+            <img class="pixelBot" id="bot2" src="images/05.png" alt="" width="200" height="200">
+            <img class="pixelBot" id="bot3" src="images/10.png" alt="" width="200" height="200">
+            <img class="pixelBot" id="bot4" src="images/13.png" alt="" width="200" height="200">
+            
         </section>
+        <h2>Get your PIXELBOT NFT here!</h2>
+            <button class="button" id="mintButton">MINT</button>
     </main>
 
     <footer>
@@ -52,6 +56,7 @@
     <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
     <script type="module" defer src="ConnectWallet.js"></script>
     <script type="module" defer src="clipboard.js"></script>
-    <script type="module" defer src="/AICall.js"></script>
+    <script type="module" defer src="Warning.js"></script>
+    
 </body>
 </html>
