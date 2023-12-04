@@ -3,10 +3,10 @@
 :root {
     --primary-color: #fc00fc;
     --secondary-color: #333;
-    --tertiary-color:  #9907ed;
+    --tertiary-color:  #07e9ed;
     --text-color: #fff;
     --background-color: #2a0229;
-    --hover-color: #555555;
+    --hover-color: #302b2b;
     --font-family: 'Poppins', sans-serif;
     --border-style: 2px solid var(--primary-color);
 }
@@ -16,6 +16,7 @@
         display: none;
     }
 }
+
 
 main {
     margin-bottom: 2rem;
@@ -84,16 +85,30 @@ body {
     margin: 0.3rem;
 }
 
+
+
 #connectButton {
 margin-right: 0.6rem;
 }
 
+#helpButton{
+    background-color: var(--hover-color);
+    border-color: var(--tertiary-color);
+    color: var(--tertiary-color);
+    
+    
+}
+
 
 #connectButton:hover,
-#mintButton:hover,
-#helpButton:hover {
+#mintButton:hover {
     background-color: var(--hover-color);
     color: var(--primary-color);
+}
+
+#helpButton:hover {
+    background-color: var(--tertiary-color);
+    color: var(--text-color);
 }
 
 #mintButton:active {
@@ -126,21 +141,22 @@ header {
 }
 
 H1 {
-    font-size: 3rem;
+    font-size: 4rem;
     margin: 0.5rem;
+    text-shadow: 2px 2px 2px var(--secondary-color);
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin: 0.5rem;
     color:var(--text-color);
-    text-shadow: 2px 2px 2px #000000;
+    text-shadow: 2px 2px 2px var(--secondary-color);
 }
 
 
 #projectIntro {
     width: 300px;
-    color: #fff;
+    color: var(--text-color);
     font-size: 0.5rem;
     margin-right: auto;
     margin-left: auto;
@@ -178,6 +194,7 @@ footer {
 
 .link {
     margin: 1rem;
+    
 
 }
 

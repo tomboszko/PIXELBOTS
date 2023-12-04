@@ -6,4 +6,4 @@ function addAlertListener(elementId) {
 }
 
 addAlertListener('mintButton');
-addAlertListener('helpButton');
+//addAlertListener('helpButton');
