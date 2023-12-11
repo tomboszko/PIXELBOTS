@@ -1,0 +1,11 @@
+{
+  "description": "Pixel art of a robot with cherry blossom motifs, combining elegance and simplicity.", 
+  "image": "ipfs://CID/02.png", 
+  "name": " Cherryblossom #02",
+  "attributes": [
+    {
+      "trait_type": "Style", 
+      "value": "Kawaii"
+    }
+  ]
+}

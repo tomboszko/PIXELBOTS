@@ -1,0 +1,11 @@
+{
+  "description": "Tinkering in the realm of gears, CogCrafter is a marvel of Steampunk engineering.", 
+  "image": "ipfs://CID/10.png", 
+  "name": "CogCrafter #10",
+  "attributes": [
+    {
+      "trait_type": "Style", 
+      "value": "RetroWave"
+    }
+  ]
+}

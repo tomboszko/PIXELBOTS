@@ -1,12 +1,11 @@
 {
   "description": "", 
-  "external_url": "ipfs://CID/00.png",
-  "image": "", 
-  "name": " Cuddlebot #00",
+  "image": "ipfs://CID/00.png", 
+  "name": "",
   "attributes": [
     {
       "trait_type": "Style", 
-      "value": "Kawaii"
+      "value": ""
     }, 
     {
       "trait_type": "level", 

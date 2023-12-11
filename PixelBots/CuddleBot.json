@@ -1,7 +1,6 @@
 {
   "description": "Pixel art of CuddleBot, radiating gentle charm with a subtle Kawaii touch, encapsulating whimsical delight.", 
-  "external_url": "ipfs://CID/00.png",
-  "image": "", 
+  "image": "ipfs://CID/00.png", 
   "name": " CuddleBot #00",
   "attributes": [
     {

@@ -1,0 +1,11 @@
+{
+  "description": "Pixel art of a joyful robot, with light touches of Kawaii.", 
+  "image": "ipfs://CID/01.png", 
+  "name": " Sweetbyte #01",
+  "attributes": [
+    {
+      "trait_type": "Style", 
+      "value": "Kawaii"
+    }
+  ]
+}

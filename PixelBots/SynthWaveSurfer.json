@@ -1,0 +1,11 @@
+{
+  "description": "Bathing in neon lights, NeonNostalgia is a throwback to the vibrant RetroWave era.", 
+  "image": "ipfs://CID/06.png", 
+  "name": "SynthWaveSurfer #06",
+  "attributes": [
+    {
+      "trait_type": "Style", 
+      "value": "RetroWave"
+    }
+  ]
+}

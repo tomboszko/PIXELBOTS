@@ -1,0 +1,11 @@
+{
+  "description": "Cruising through pixelated highways, RetroRider embodies the spirit of RetroWave.", 
+  "image": "ipfs://CID/08.png", 
+  "name": "RetroRider #08",
+  "attributes": [
+    {
+      "trait_type": "Style", 
+      "value": "RetroWave"
+    }
+  ]
+}

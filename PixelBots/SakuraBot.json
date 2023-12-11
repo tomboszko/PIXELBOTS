@@ -1,0 +1,11 @@
+{
+  "description": "SakuraBot is one of the most beautiful", 
+  "image": "ipfs://CID/04.png", 
+  "name": "SakuraBot #04",
+  "attributes": [
+    {
+      "trait_type": "Style", 
+      "value": "Kawaii"
+    }
+  ]
+}

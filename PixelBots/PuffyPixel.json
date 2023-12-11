@@ -1,0 +1,11 @@
+{
+  "description": " Soft as a cloud, PuffyPixel is a Kawaii dream come true.", 
+  "image": "ipfs://CID/03.png", 
+  "name": " PuffyPixel #03",
+  "attributes": [
+    {
+      "trait_type": "Style", 
+      "value": "Kawaii"
+    }
+  ]
+}

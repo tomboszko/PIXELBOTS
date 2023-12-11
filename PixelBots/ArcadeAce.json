@@ -1,0 +1,11 @@
+{
+  "description": "Dominating the digital arcades, ArcadeAce is a RetroWave legend", 
+  "image": "ipfs://CID/09.png", 
+  "name": "ArcadeAce #09",
+  "attributes": [
+    {
+      "trait_type": "Style", 
+      "value": "RetroWave"
+    }
+  ]
+}
